@@ -27,3 +27,13 @@ char *read_input(const char *src) {
     // free(input) after use
     return input;
 }
+
+
+int main() {
+
+    char *input = read_input(INPUT_SRC);
+
+    free(input);
+
+    return 0;
+}
