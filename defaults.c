@@ -4,7 +4,6 @@
 
 
 #define INPUT_SRC "./input.txt"
-#define MAX_INPUT 4096
 
 
 char *read_input(const char *src) {
