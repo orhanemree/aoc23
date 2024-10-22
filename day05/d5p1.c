@@ -77,6 +77,7 @@ int main() {
             for (int i = 0; i < seed_count; ++i) {
                 // make sure convert a seed one time in one map
                 if (seeds[i][1] < curr_stage) {
+                    // check if seed is between the range, if yes, change it
                     if (seeds[i][0] >= source_start && seeds[i][0] <= source_start+range) {
                         seeds[i][0] = seeds[i][0]-source_start+destination_start;
                         seeds[i][1] = curr_stage;
